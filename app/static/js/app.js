@@ -9,7 +9,7 @@ const Home = {
   `,
   data() {
       return {
-          welcome: 'Hello Imani! Welcome to VueJS'
+          welcome: 'Hello Imani! Welcome to VueJS!'
       }
   }
 };
@@ -46,7 +46,7 @@ const NewsList = {
 
       fetch('https://newsapi.org/v2/top-headlines?country=us', {
               headers: {
-                'Authorization': 'Bearer 2f3a1ea889d74673ae919cb3bf2fe5e1'
+                'Authorization': 'Bearer <your-api-key>'
               }
           })
           .then(function(response) {
@@ -69,7 +69,7 @@ const NewsList = {
           fetch('https://newsapi.org/v2/everything?q=' +
                   self.searchTerm + '&language=en', {
                       headers: {
-                          'Authorization': 'Bearer 2f3a1ea889d74673ae919cb3bf2fe5e1'
+                          'Authorization': 'Bearer <your-api-key>'
                       }
                   })
               .then(function(response) {
@@ -87,7 +87,7 @@ const NewsList = {
 const app = Vue.createApp({
   data() {
     return {
-      welcome: 'Hello Imani! Welcome to VueJS'
+      welcome: 'Hello Imani! Welcome to VueJS!'
     }
   },
     components: {
